@@ -6,10 +6,10 @@
   max-width: 800px;
   margin: 2em auto;
   margin-bottom: 0;
-  border: 4.5em solid black;
-  border-top-color: red;
-  border-right-color: green;
-  border-bottom-color: blue;
+  border: 4.5em solid rgba(0, 0, 0, 0.7);
+  border-top-color: #bdbdbd;
+  border-right-color: rgba(0, 0, 0, 0.7);
+  border-bottom-color: #bdbdbd;
   /* border: solid 5px red; */
 }
 
@@ -33,6 +33,7 @@
 
 .carousel-item-visible {
   display: block;
+  animation: fade-in 0.7s;
 }
 
 .carousel-actions {
@@ -63,4 +64,26 @@
 
 #carousel-button-next {
   margin-right: 0.3em;
+}
+
+form {
+  text-align: center;
+}
+
+@keyframes fade-in {
+  0% {
+      opacity: 0;
+  }
+
+  40% {
+      opacity: 0.2;
+  }
+
+  80% {
+      opacity: 0.8;
+  }
+
+  100% {
+      opacity: 1;
+  }
 }
